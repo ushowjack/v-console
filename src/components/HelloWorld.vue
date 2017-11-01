@@ -21,12 +21,17 @@
 </template>
 
 <script>
+const Console = console;
+
 export default {
   name: 'HelloWorld',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
     };
+  },
+  created() {
+    Console.log(this.$msg);
   },
 };
 </script>
